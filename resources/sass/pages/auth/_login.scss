@@ -1,0 +1,9 @@
+#login {
+    .forgot-link {
+
+        &:hover {
+            text-decoration: none;
+            color: darken($primary, 20%);
+        }
+    }
+}

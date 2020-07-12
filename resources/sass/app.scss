@@ -1,0 +1,33 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// Pages
+@import 'pages/auth/register';
+@import 'pages/auth/login';
+
+//Global defaults
+body,
+html {
+    min-height: 100vh;
+    height: 100%;
+}
+
+main {
+    height: 100%;
+}
+
+.grecaptcha-badge {
+    visibility: hidden;
+}
+
+.show-recaptcha {
+    .grecaptcha-badge {
+        visibility: visible !important;
+    }
+}
