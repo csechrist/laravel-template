@@ -36,10 +36,11 @@
                     <form method="POST" action="{{ route('login') }}" id="login-form">
                         @csrf
 
-                        <div class="form-group">
-                            <label for="email">{{ __('Email') }}</label>
+                        <div class="form-label-group">
                             <input id="email" type="email" class="form-control @error('email') is-invalid @enderror"
-                                name="email" value="{{ old('email') }}" required autocomplete="email">
+                                name="email" value="{{ old('email') }}" required autocomplete="email"
+                                placeholder="{{ __('Email') }}">
+                            <label for="email">{{ __('Email') }}</label>
 
                             @error('email')
                             <span class="invalid-feedback" role="alert">
@@ -48,11 +49,14 @@
                             @enderror
                         </div>
 
-                        <div class="form-group">
-                            <label for="password">{{ __('Password') }}</label>
+
+                        <div class="form-label-group">
                             <input id="password" type="password"
                                 class="form-control @error('password') is-invalid @enderror" name="password" required
-                                autocomplete="password" aria-describedby="passwordHelp">
+                                autocomplete="password" aria-describedby="passwordHelp"
+                                placeholder="{{__('Password')}}">
+                            <label for="password">{{ __('Password') }}</label>
+
                             <small id="passwordHelp" class="form-text text-muted"><a
                                     href="{{ route('password.request') }}" class="forgot-link">Reset
                                     Password</a></small>

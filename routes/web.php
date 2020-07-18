@@ -30,8 +30,6 @@ Route::group([ 'prefix' => 'provider' ], function() {
 
 Auth::routes( ['login' => false, 'register' => false, 'verify' => true] );
 
-Route::get( '/home', 'HomeController@index' )->name( 'home' );
-
 Route::get('logout', function(Request $request) {
     Session::flush();
     Auth::logout();

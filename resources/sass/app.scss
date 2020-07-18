@@ -6,6 +6,8 @@
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+@import "globals/floating_labels";
+@import "globals/dashboard";
 
 // Pages
 @import 'pages/auth/register';

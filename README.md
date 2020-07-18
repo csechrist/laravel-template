@@ -27,7 +27,6 @@
 -   [AWS](https://aws.amazon.com)
 -   [Google ReCaptcha](https://www.google.com/recaptcha/admin/create)
 
-
 ## Getting Started
 
 1. Copy `.env.example` to `.env`
@@ -46,6 +45,7 @@
 -   [Eloquent UUIDs](https://github.com/goldspecdigital/laravel-eloquent-uuid): Used for IDs in Eloquent Models
 -   [AltThree Segment](https://github.com/AltThree/Segment): Used to integrate with Segment
 -   [Asset-CDN](https://github.com/arubacao/asset-cdn): Used for content delivery
+-   [Spatie Menus](https://docs.spatie.be/menu/v2) Used to easily create global menus
 
 ## Non-Laravel PHP Packages
 

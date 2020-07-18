@@ -19,6 +19,7 @@
         "laravel/socialite": "^4.4",
         "laravel/tinker": "^2.0",
         "laravel/ui": "^2.1",
+        "spatie/laravel-menu": "^3.5",
         "webpatser/laravel-uuid": "^3.0"
     },
     "require-dev": {
